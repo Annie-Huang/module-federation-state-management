@@ -1,0 +1,6 @@
+State Management for Module Federation Four Ways (https://www.youtube.com/watch?v=njXeMeAu4Sg)
+
+https://github.com/jherr/module-federation-state-management
+https://github.com/Annie-Huang/module-federation-state-management
+
+-------------------------------------------------------------------------------
