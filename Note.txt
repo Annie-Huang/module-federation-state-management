@@ -70,7 +70,7 @@ Next steps:
 PS C:\react\module-federation-state-management\simple> cd .\mfe-shared\
 PS C:\react\module-federation-state-management\simple\mfe-shared> npm install
 PS C:\react\module-federation-state-management\simple\mfe-shared> npm install react react-dom
-
+PS C:\react\module-federation-state-management\simple\mfe-shared> npm install @types/react @types/react-dom -D
 
 -------------------------------------------------------------------------------
 
