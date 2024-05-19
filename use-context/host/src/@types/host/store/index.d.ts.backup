@@ -1,0 +1,17 @@
+// Cannot get things working with this index.d.ts file for store because it got multiple export
+import React, { ReactNode } from 'react';
+import { CountProvider, useCount } from 'host/store';
+
+export type CounterProviderProps = React.FunctionComponent<{
+  children: ReactNode;
+}>;
+
+export type useCountProps = () => [
+  number,
+  (value: ((prevState: number) => number) | number) => void
+];
+
+export default {
+  CounterProvider: CounterProviderProps,
+  useCount: useCountProps,
+};
