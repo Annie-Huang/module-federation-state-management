@@ -51,6 +51,25 @@ http://localhost:3001/
 
 http://localhost:3001/remoteEntry.js
 
+PS C:\react\module-federation-state-management\simple\nav> npm run build:dev
+Open C:\react\module-federation-state-management\simple\nav\dist\src_Header_tsx.js
+
+-------------------------------------------------------------------------------
+
+PS C:\react\module-federation-state-management\simple> npx create-mf-app
+? Pick the name of your app: mfe-shared
+? Project Type: Library
+Your 'mfe-shared' project is ready to go.
+
+Next steps:
+
+▶️ cd mfe-shared
+▶️ npm install
+▶️ npm start
+
+PS C:\react\module-federation-state-management\simple> cd .\mfe-shared\
+PS C:\react\module-federation-state-management\simple\mfe-shared> npm install
+
 
 -------------------------------------------------------------------------------
 
