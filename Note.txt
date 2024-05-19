@@ -4,3 +4,62 @@ https://github.com/jherr/module-federation-state-management
 https://github.com/Annie-Huang/module-federation-state-management
 
 -------------------------------------------------------------------------------
+
+PS C:\react\module-federation-state-management\simple> npx create-mf-app
+? Pick the name of your app: host
+? Project Type: Application
+? Port number: 3000
+? Framework: react
+? Language: typescript
+? CSS: Tailwind
+? Packer: Webpack
+Your 'host' project is ready to go.
+
+Next steps:
+
+▶️ cd host
+▶️ npm install
+▶️ npm start
+
+PS C:\react\module-federation-state-management\simple> cd .\host\
+PS C:\react\module-federation-state-management\simple\host> npm install
+PS C:\react\module-federation-state-management\simple\host> npm run start
+http://localhost:3000/
+
+-------------------------------------------------------------------------------
+
+PS C:\react\module-federation-state-management\simple> npx create-mf-app
+? Pick the name of your app: nav
+? Project Type: Application
+? Port number: 3001
+? Framework: react
+? Language: typescript
+? CSS: Tailwind
+? Packer: Webpack
+Your 'nav' project is ready to go.
+
+Next steps:
+
+▶️ cd nav
+▶️ npm install
+▶️ npm start
+
+PS C:\react\module-federation-state-management\simple> cd .\nav\
+PS C:\react\module-federation-state-management\simple\nav> npm install
+PS C:\react\module-federation-state-management\simple\nav> npm run start
+http://localhost:3001/
+
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
