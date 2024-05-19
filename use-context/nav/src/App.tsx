@@ -5,14 +5,16 @@ import Header from './Header';
 
 import './index.scss';
 
-const App = () => {
-  const [count, setCount] = useState<number>(0);
+import { CountProvider } from 'host/store';
 
+const App = () => {
   return (
-    <div className='mt-10 text-3xl mx-auto max-w-6xl'>
-      <Header count={count} onClear={() => setCount(0)} />
-      <div>Name: nav</div>
-    </div>
+    <CountProvider>
+      <div className='mt-10 text-3xl mx-auto max-w-6xl'>
+        <Header />
+        <div>Name: nav</div>
+      </div>
+    </CountProvider>
   );
 };
 const rootElement = document.getElementById('app');

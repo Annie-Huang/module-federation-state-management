@@ -8,7 +8,10 @@ import ReactDOM from 'react-dom/client';
 import Header from 'nav/Header';
 
 import './index.scss';
-import { CountProvider, useCount } from './store';
+
+// Have to use 'host/store' instead of './store', so it can be shared with the <Header> in <App> in the nav side
+// This make sure it use the same instance with the nav app.
+import { CountProvider, useCount } from 'host/store';
 
 const App = () => {
   // const [count, setCount] = useState<number>(0);
