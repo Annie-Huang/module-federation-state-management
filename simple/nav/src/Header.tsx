@@ -1,6 +1,8 @@
 // import React, { FC } from 'react';
 import React from 'react';
 
+import './base.scss';
+
 // interface HeaderProps {
 //   count: number;
 //   onClear: () => void;
@@ -10,7 +12,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header className='bg-blue-700 text-white font-bold text-3xl p-5 flex'>
-      <div>Header</div>
+      <div>Awesome Header</div>
     </header>
   );
 };
