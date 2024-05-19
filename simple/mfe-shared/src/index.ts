@@ -1,2 +1,7 @@
-const addNumbers = (a: number, b: number): number => a + b;
-export default addNumbers;
+import React from 'react';
+export type HeaderProps = React.FunctionComponent<{
+  count: number;
+  onClear: () => void;
+}>;
+
+export default true;

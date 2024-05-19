@@ -72,6 +72,14 @@ PS C:\react\module-federation-state-management\simple\mfe-shared> npm install
 PS C:\react\module-federation-state-management\simple\mfe-shared> npm install react react-dom
 PS C:\react\module-federation-state-management\simple\mfe-shared> npm install @types/react @types/react-dom -D
 
+PS C:\react\module-federation-state-management\simple\mfe-shared> npm run build
+--> Create dist/index.d.ts file
+
+PS C:\react\module-federation-state-management\simple\mfe-shared> npm link      <-- I don't really like this solution.
+Then go back to nav and host app:
+PS C:\react\module-federation-state-management\simple\nav> npm link mfe-shared      <-- in nav
+PS C:\react\module-federation-state-management\simple\host> npm link mfe-shared     <-- host
+
 -------------------------------------------------------------------------------
 
 simple: state management through useState

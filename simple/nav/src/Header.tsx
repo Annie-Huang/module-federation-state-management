@@ -1,13 +1,16 @@
-import React, { FC } from 'react';
+// import React, { FC } from 'react';
+import React from 'react';
 
 import './base.scss';
+import type { HeaderProps } from 'mfe-shared';
 
-interface HeaderProps {
-  count: number;
-  onClear: () => void;
-}
+// interface HeaderProps {
+//   count: number;
+//   onClear: () => void;
+// }
 
-const Header: FC<HeaderProps> = ({ count, onClear }) => {
+// const Header: FC<HeaderProps> = ({ count, onClear }) => {
+const Header: HeaderProps = ({ count, onClear }) => {
   return (
     <header className='bg-blue-700 text-white font-bold text-3xl p-5 flex'>
       <div className='flex-grow'>Awesome Header</div>

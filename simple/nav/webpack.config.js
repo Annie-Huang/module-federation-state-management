@@ -39,13 +39,15 @@ module.exports = (_, argv) => ({
     ],
   },
 
+  devtool: false,
+
   plugins: [
     new ModuleFederationPlugin({
       name: 'nav',
       filename: 'remoteEntry.js',
       remotes: {},
       exposes: {
-        './Header': './src/Header',
+        './Header': './src/Header.tsx',
       },
       shared: {
         ...deps,
