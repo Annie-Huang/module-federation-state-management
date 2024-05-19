@@ -1,19 +1,34 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React, { useState } from 'react';
 
-import './index.scss'
+import ReactDOM from 'react-dom/client';
 
-const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <div>Name: host</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Tailwind</div>
-  </div>
-)
-const rootElement = document.getElementById('app')
-if (!rootElement) throw new Error('Failed to find the root element')
+import Header from 'nav/Header';
 
-const root = ReactDOM.createRoot(rootElement as HTMLElement)
+import './index.scss';
 
-root.render(<App />)
+const App = () => {
+  const [count, setCount] = useState<number>(0);
+
+  return (
+    <div className='text-3xl mx-auto max-w-6xl'>
+      <Header count={count} onClear={() => setCount(0)} />
+      <div>Name: host</div>
+      <div>Count: {count}</div>
+      <div>Name: host</div>
+      <div>
+        <button
+          onClick={() => setCount(count + 1)}
+          className='bg-indigo-800 text-white font-bold py-2 px-4 rounded'
+        >
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  );
+};
+const rootElement = document.getElementById('app');
+if (!rootElement) throw new Error('Failed to find the root element');
+
+const root = ReactDOM.createRoot(rootElement as HTMLElement);
+
+root.render(<App />);
