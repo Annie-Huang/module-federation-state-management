@@ -4,6 +4,8 @@ https://github.com/jherr/module-federation-state-management
 https://github.com/Annie-Huang/module-federation-state-management
 
 -------------------------------------------------------------------------------
+simple folder:
+-------------------------------------------------------------------------------
 
 PS C:\react\module-federation-state-management\simple> npx create-mf-app
 ? Pick the name of your app: host
@@ -81,8 +83,13 @@ PS C:\react\module-federation-state-management\simple\nav> npm link mfe-shared  
 PS C:\react\module-federation-state-management\simple\host> npm link mfe-shared     <-- host
 
 -------------------------------------------------------------------------------
+use-context folder:
+-------------------------------------------------------------------------------
+Pretty much did the same thing as 'simple folder'
+
 
 simple: state management through useState
+use-context: state management through useContext
 
 
 
