@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
 
 import ReactDOM from 'react-dom/client';
 
@@ -7,9 +8,11 @@ import ReactDOM from 'react-dom/client';
 import Header from 'nav/Header';
 
 import './index.scss';
+import { CountProvider, useCount } from './store';
 
 const App = () => {
-  const [count, setCount] = useState<number>(0);
+  // const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useCount();
 
   return (
     <div className='text-3xl mx-auto max-w-6xl'>
@@ -33,4 +36,9 @@ if (!rootElement) throw new Error('Failed to find the root element');
 
 const root = ReactDOM.createRoot(rootElement as HTMLElement);
 
-root.render(<App />);
+// root.render(<App />);
+root.render(
+  <CountProvider>
+    <App />
+  </CountProvider>
+);
