@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import ReactDOM from 'react-dom/client';
 
+// The setting in C:\react\module-federation-state-management\use-context\host\src\@types\nav\Header\index.d.ts
+// and C:\react\module-federation-state-management\use-context\host\tsconfig.json give it the type for count props and onClear props
 import Header from 'nav/Header';
 
 import './index.scss';

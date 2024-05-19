@@ -89,7 +89,9 @@ Pretty much did the same thing as 'simple folder'
 
 
 simple: state management through useState
+    --> Use mfe-shared lib to share the type, make symbolic link.
 use-context: state management through useContext
+    --> Just hard coded the type in @types/nav/Header/index.d.ts file without making the link.
 
 
 
