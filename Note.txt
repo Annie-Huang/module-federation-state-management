@@ -49,6 +49,9 @@ PS C:\react\module-federation-state-management\simple\nav> npm install
 PS C:\react\module-federation-state-management\simple\nav> npm run start
 http://localhost:3001/
 
+http://localhost:3001/remoteEntry.js
+
+
 -------------------------------------------------------------------------------
 
 
