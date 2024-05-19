@@ -7,7 +7,7 @@ import React, {
 } from 'react';
 
 // https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/context/
-type CountContextType = [number, () => void];
+type CountContextType = [number, React.Dispatch<React.SetStateAction<number>>];
 
 const CountContext = createContext<CountContextType>([0, () => {}]);
 
@@ -18,7 +18,7 @@ export interface CounterProviderProps {
 
 export const CountProvider: FC<CounterProviderProps> = ({ children }) => {
   return (
-    <CountContext.Provider value={useState(0) as CountContextType}>
+    <CountContext.Provider value={useState(0)}>
       {children}
     </CountContext.Provider>
   );
