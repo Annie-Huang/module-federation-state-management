@@ -92,6 +92,11 @@ zustand folder:
 -------------------------------------------------------------------------------
 Pretty much did the same thing as 'simple folder' plus the following:
 
+PS C:\react\module-federation-state-management\zustand\host> npm install zustand
+
+
+
+
 
 simple: state management through useState
     --> Use mfe-shared lib to share the type, make symbolic link.
