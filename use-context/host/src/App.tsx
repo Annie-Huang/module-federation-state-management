@@ -19,7 +19,8 @@ const App = () => {
 
   return (
     <div className='text-3xl mx-auto max-w-6xl'>
-      <Header count={count} onClear={() => setCount(0)} />
+      {/*<Header count={count} onClear={() => setCount(0)} />*/}
+      <Header />
       <div>Name: host</div>
       <div>Count: {count}</div>
       <div>Name: host</div>
