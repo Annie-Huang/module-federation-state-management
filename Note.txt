@@ -118,6 +118,7 @@ Next steps:
 PS C:\react\module-federation-state-management\redux> cd .\store\
 PS C:\react\module-federation-state-management\redux\store> npm install
 
+PS C:\react\module-federation-state-management\redux\store> npm install @reduxjs/toolkit react-redux
 
 
 
