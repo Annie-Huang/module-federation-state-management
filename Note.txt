@@ -98,6 +98,26 @@ redux folder:
 -------------------------------------------------------------------------------
 Pretty much did the same thing as 'simple folder', the same way to create 'host' and 'nav' apps, plus the following:
 
+PS C:\react\module-federation-state-management> cd .\redux\
+PS C:\react\module-federation-state-management\redux> npx create-mf-app
+? Pick the name of your app: store
+? Project Type: Application
+? Port number: 3002
+? Framework: react
+? Language: typescript
+? CSS: Tailwind
+? Packer: Webpack
+Your 'store' project is ready to go.
+
+Next steps:
+
+▶️ cd store
+▶️ npm install
+▶️ npm start
+
+PS C:\react\module-federation-state-management\redux> cd .\store\
+PS C:\react\module-federation-state-management\redux\store> npm install
+
 
 
 
