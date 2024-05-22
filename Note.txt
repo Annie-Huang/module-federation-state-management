@@ -120,7 +120,10 @@ PS C:\react\module-federation-state-management\redux\store> npm install
 
 PS C:\react\module-federation-state-management\redux\store> npm install @reduxjs/toolkit react-redux
 
+https://redux-toolkit.js.org/tutorials/quick-start
 
+
+-------------------------------------------------------------------------------
 
 simple: state management through useState
     --> Use mfe-shared lib to share the type, make symbolic link.
@@ -128,6 +131,9 @@ use-context: state management through useContext
     --> Just hard coded the type in @types/nav/Header/index.d.ts file without making the link.
     --> The same for C:\react\module-federation-state-management\use-context\host\src\@types\host\store\index.d.ts
         and C:\react\module-federation-state-management\use-context\nav\src\@types\host\store\index.d.ts file
+zustand: state management through zustand
+   --> Much cleaner code, just use store without using <CountProvider> to wrap around things.
+redux: state management through redux
 
 
 
