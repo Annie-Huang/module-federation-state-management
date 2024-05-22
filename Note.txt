@@ -91,9 +91,12 @@ Pretty much did the same thing as 'simple folder'
 zustand folder:
 -------------------------------------------------------------------------------
 Pretty much did the same thing as 'simple folder' plus the following:
-
 PS C:\react\module-federation-state-management\zustand\host> npm install zustand
 
+-------------------------------------------------------------------------------
+redux folder:
+-------------------------------------------------------------------------------
+Pretty much did the same thing as 'simple folder', the same way to create 'host' and 'nav' apps, plus the following:
 
 
 
