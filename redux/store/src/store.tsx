@@ -1,17 +1,14 @@
 // https://redux-toolkit.js.org/tutorials/quick-start#create-a-redux-store
 // https://redux-toolkit.js.org/tutorials/quick-start#create-a-redux-state-slice
 
-import { configureStore } from '@reduxjs/toolkit';
-
-import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 export interface CounterState {
-  value: number;
+  count: number;
 }
 
 const initialState: CounterState = {
-  value: 0,
+  count: 0,
 };
 
 export const counterSlice = createSlice({
@@ -19,28 +16,21 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-      state.value += 1;
+      state.count += 1;
     },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
+    clear: (state) => {
+      state.count = 0;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
-
-export default counterSlice.reducer;
+export const { increment, clear } = counterSlice.actions;
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    counter: counterSlice.reducer,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
