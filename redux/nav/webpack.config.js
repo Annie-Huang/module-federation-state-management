@@ -46,7 +46,9 @@ module.exports = (_, argv) => ({
       remotes: {
         store: 'store@http://localhost:3002/remoteEntry.js',
       },
-      exposes: {},
+      exposes: {
+        './Header': './src/Header',
+      },
       shared: {
         ...deps,
         react: {
