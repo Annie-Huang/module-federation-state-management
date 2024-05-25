@@ -122,6 +122,8 @@ PS C:\react\module-federation-state-management\redux\store> npm install @reduxjs
 
 https://redux-toolkit.js.org/tutorials/quick-start
 
+http://localhost:3002/
+http://localhost:3002/remoteEntry.js
 
 -------------------------------------------------------------------------------
 
